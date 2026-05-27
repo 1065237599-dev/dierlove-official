@@ -519,15 +519,46 @@
                 </div>
             </div>
 
-            <!-- Form -->
             <div class="max-w-4xl mx-auto fade-in">
-                <form class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <form action="https://formspree.io/f/xbdbqjvy" method="POST" class="grid grid-cols-1 md:grid-cols-2 gap-8">
                     <!-- Column 1 -->
                     <div class="space-y-8">
                         <div>
                             <label class="text-[10px] tracking-[0.2em] uppercase font-bold text-white/40 mb-3 block">Your Name *</label>
-                            <input type="text" class="w-full bg-white/5 border-b border-white/20 py-4 px-2 text-sm focus:outline-none focus:border-gold transition" placeholder="John Smith">
+                            <input type="text" name="name" required class="w-full bg-white/5 border-b border-white/20 py-4 px-2 text-sm focus:outline-none focus:border-gold transition" placeholder="John Smith">
                         </div>
+                        <div>
+                            <label class="text-[10px] tracking-[0.2em] uppercase font-bold text-white/40 mb-3 block">Company Name</label>
+                            <input type="text" name="company" class="w-full bg-white/5 border-b border-white/20 py-4 px-2 text-sm focus:outline-none focus:border-gold transition" placeholder="Your Fashion Brand">
+                        </div>
+                        <div>
+                            <label class="text-[10px] tracking-[0.2em] uppercase font-bold text-white/40 mb-3 block">Business Email *</label>
+                            <input type="email" name="email" required class="w-full bg-white/5 border-b border-white/20 py-4 px-2 text-sm focus:outline-none focus:border-gold transition" placeholder="john@brand.com">
+                        </div>
+                    </div>
+                    <!-- Column 2 -->
+                    <div class="space-y-8">
+                        <div>
+                            <label class="text-[10px] tracking-[0.2em] uppercase font-bold text-white/40 mb-3 block">Interest Category</label>
+                            <select name="category" class="w-full bg-white/5 border-b border-white/20 py-4 px-2 text-sm focus:outline-none focus:border-gold transition text-white/60">
+                                <option class="bg-[#1A1A1A]">Private Label (Low MOQ)</option>
+                                <option class="bg-[#1A1A1A]">Custom Design (OEM)</option>
+                                <option class="bg-[#1A1A1A]">Wholesale / In-Stock</option>
+                                <option class="bg-[#1A1A1A]">Fabric Sourcing Only</option>
+                            </select>
+                        </div>
+                        <div>
+                            <label class="text-[10px] tracking-[0.2em] uppercase font-bold text-white/40 mb-3 block">Tell us about your project</label>
+                            <textarea name="message" rows="4" class="w-full bg-white/5 border-b border-white/20 py-4 px-2 text-sm focus:outline-none focus:border-gold transition" placeholder="I'm looking to produce 200pcs of silk chemises..."></textarea>
+                        </div>
+                    </div>
+
+                    <div class="md:col-span-2 pt-10">
+                        <button type="submit" class="w-full bg-gold text-black font-bold py-6 text-xs tracking-[0.4em] uppercase hover:bg-white transition shadow-[0_0_30px_rgba(200,162,122,0.3)]">Request My Free Quote & Concept</button>
+                        <p class="text-center text-[10px] text-white/30 mt-6 tracking-widest uppercase italic">Secure • Confidential • Factory Direct</p>
+                    </div>
+                </form>
+            </div>
                         <div>
                             <label class="text-[10px] tracking-[0.2em] uppercase font-bold text-white/40 mb-3 block">Email Address *</label>
                             <input type="email" class="w-full bg-white/5 border-b border-white/20 py-4 px-2 text-sm focus:outline-none focus:border-gold transition" placeholder="john@brand.com">
