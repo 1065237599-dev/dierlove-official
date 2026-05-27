@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manufacturing Excellence | Dierlove Factory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F7F3EE;
+            color: #1A1A1A;
+            scroll-behavior: smooth;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-cream { background-color: #F7F3EE; }
+        .text-gold { color: #C8A27A; }
+        .bg-gold { background-color: #C8A27A; }
+        .border-gold { border-color: #C8A27A; }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .step-number {
+            font-family: 'Playfair Display', serif;
+            font-size: 4rem;
+            color: rgba(200, 162, 122, 0.15);
+            position: absolute;
+            top: -1.5rem;
+            left: -1rem;
+            z-index: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-[#F7F3EE] px-8 py-6 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-serif tracking-widest font-bold">DIERLOVE</a>
+        <div class="hidden md:flex space-x-12 text-xs tracking-[0.2em] uppercase font-medium">
+            <a href="index.html" class="hover:text-gold transition">Home</a>
+            <a href="index.html#categories" class="hover:text-gold transition">Collections</a>
+            <a href="manufacturing.html" class="text-gold transition">Manufacturing</a>
+            <a href="index.html#services" class="hover:text-gold transition">Services</a>
+            <a href="index.html#contact" class="hover:text-gold transition">Inquiry</a>
+        </div>
+        <div class="md:hidden">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </div>
+    </nav>
+
+    <!-- Manufacturing Hero -->
+    <section class="relative pt-40 pb-32 bg-white overflow-hidden">
+        <div class="container mx-auto px-8 lg:px-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+                <div class="fade-in">
+                    <span class="text-xs tracking-[0.4em] text-gold uppercase mb-6 block font-semibold">The Core of Quality</span>
+                    <h1 class="text-5xl lg:text-7xl font-serif leading-tight mb-8">
+                        Precision in <br><span class="italic font-normal text-gold">Every Stitch.</span>
+                    </h1>
+                    <p class="text-[#7A7A7A] text-lg leading-relaxed font-light mb-12">
+                        Explore the Dierlove manufacturing philosophy: where advanced garment technology meets the meticulous hand of the artisan. Our factory is engineered for high-end B2B production.
+                    </p>
+                    <div class="flex gap-12 border-t border-[#F7F3EE] pt-12">
+                        <div>
+                            <p class="text-2xl font-serif mb-1">5,000 m²</p>
+                            <p class="text-[9px] tracking-widest uppercase text-[#7A7A7A] font-bold">Facility Area</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-serif mb-1">20,000+</p>
+                            <p class="text-[9px] tracking-widest uppercase text-[#7A7A7A] font-bold">Monthly Capacity</p>
+                        </div>
+                        <div>
+                            <p class="text-2xl font-serif mb-1">AQL 2.5</p>
+                            <p class="text-[9px] tracking-widest uppercase text-[#7A7A7A] font-bold">Standard</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative fade-in">
+                    <img src="https://sc01.alicdn.com/kf/A9da460f95fe14b479a1eeb95b9a76be9R.jpg" alt="Dierlove Factory Excellence" class="w-full h-[600px] object-cover grayscale hover:grayscale-0 transition-all duration-1000">
+                    <div class="absolute -bottom-10 -left-10 bg-dark bg-[#1A1A1A] p-12 text-white hidden xl:block">
+                        <p class="text-xs tracking-[0.3em] uppercase mb-4 opacity-60">Compliance</p>
+                        <p class="text-xl font-serif tracking-widest">ISO 9001:2015 <br>Certified</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The 12-Step QC Process -->
+    <section class="py-32 bg-cream">
+        <div class="container mx-auto px-8 lg:px-24">
+            <div class="text-center mb-24 fade-in">
+                <span class="text-xs tracking-[0.4em] text-gold uppercase mb-4 block font-semibold">Rigorous Standards</span>
+                <h2 class="text-4xl lg:text-5xl font-serif mb-6 uppercase tracking-widest text-dark">The 12-Step QC Protocol</h2>
+                <div class="w-20 h-px bg-gold mx-auto opacity-50 mb-8"></div>
+                <p class="max-w-2xl mx-auto text-[#7A7A7A] font-light">Quality is never an accident. Every Dierlove garment passes through twelve independent verification points before it is approved for shipment.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-20">
+                <!-- Step 1 -->
+                <div class="relative fade-in">
+                    <span class="step-number">01</span>
+                    <h4 class="text-sm font-serif uppercase tracking-widest mb-4 font-bold relative z-10">Fabric Inspection</h4>
+                    <p class="text-xs text-[#7A7A7A] leading-relaxed relative z-10">Raw materials are inspected for color consistency, tension, and flaws using professional grading machines.</p>
+                </div>
+                <!-- Step 2 -->
+                <div class="relative fade-in" style="transition-delay: 100ms;">
+                    <span class="step-number">02</span>
+                    <h4 class="text-sm font-serif uppercase tracking-widest mb-4 font-bold relative z-10">Shrinkage Test</h4>
+                    <p class="text-xs text-[#7A7A7A] leading-relaxed relative z-10">Sample strips from every roll undergo standardized washing to ensure 0-1% shrinkage in final production.</p>
+                </div>
+                <!-- Step 3 -->
+                <div class="relative fade-in" style="transition-delay: 200ms;">
+                    <span class="step-number">03</span>
+                    <h4 class="text-sm font-serif uppercase tracking-widest mb-4 font-bold relative z-10">CAD Patterning</h4>
+                    <p class="text-xs text-[#7A7A7A] leading-relaxed relative z-10">Patterns are digitized for 1:1 precision, optimizing fabric yield and ensuring fit consistency across sizes.</p>
+                </div>
+                <!-- Step 4 -->
+                <div class="relative fade-in" style="transition-delay: 300ms;">
+                    <span class="step-number">04</span>
+                    <h4 class="text-sm font-serif uppercase tracking-widest mb-4 font-bold relative z-10">Precision Cutting</h4>
+                    <p class="text-xs text-[#7A7A7A] leading-relaxed relative z-10">Automated cutting systems provide millimetric accuracy, critical for complex lingerie and swimwear components.</p>
+                </div>
+                <!-- Step 5 -->
+                <div class="relative fade-in" style="transition-delay: 400ms;">
+                    <span class="step-number">05</span>
+                    <h4 class="text-sm font-serif uppercase tracking-widest mb-4 font-bold relative z-10">First-Piece Approval</h4>
+                    <p class="text-xs text-[#7A7A7A] leading-relaxed relative z-10">The first garment off each line is verified against the tech pack by the senior QC manager before mass assembly.</p>
+                </div>
+                <!-- Step 6 -->
+                <div class="relative fade-in" style="transition-delay: 500ms;">
+                    <span class="step-number">06</span>
+                    <h4 class="text-sm font-serif uppercase tracking-widest mb-4 font-bold relative z-10">In-Line Inspection</h4>
+                    <p class="text-xs text-[#7A7A7A] leading-relaxed relative z-10">QC inspectors monitor each production line hourly to identify and rectify sewing issues in real-time.</p>
+                </div>
+                <!-- Step 7 -->
+                <div class="relative fade-in" style="transition-delay: 600ms;">
+                    <span class="step-number">07</span>
+                    <h4 class="text-sm font-serif uppercase tracking-widest mb-4 font-bold relative z-10">Thread Clearing</h4>
+                    <p class="text-xs text-[#7A7A7A] leading-relaxed relative z-10">Every garment is manually cleared of loose threads, ensuring a clean, high-end finish for premium retail.</p>
+                </div>
+                <!-- Step 8 -->
+                <div class="relative fade-in" style="transition-delay: 700ms;">
+                    <span class="step-number">08</span>
+                    <h4 class="text-sm font-serif uppercase tracking-widest mb-4 font-bold relative z-10">Symmetry Check</h4>
+                    <p class="text-xs text-[#7A7A7A] leading-relaxed relative z-10">Critical for bras and swimwear: left-to-right symmetry and alignment are checked on specialized mannequins.</p>
+                </div>
+            </div>
+            
+            <div class="mt-20 text-center fade-in">
+                <p class="text-xs tracking-[0.2em] uppercase text-gold font-bold">And 4 more stages including Ironing, Label Auditing, Metal Detection, and AQL Final Audit.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Material Library -->
+    <section class="py-32 bg-white">
+        <div class="container mx-auto px-8 lg:px-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-24 items-center">
+                <div class="fade-in">
+                    <span class="text-xs tracking-[0.4em] text-gold uppercase mb-6 block font-semibold">The Fabric Gallery</span>
+                    <h2 class="text-4xl lg:text-5xl font-serif leading-tight mb-8">Uncompromising <br>Material Selection.</h2>
+                    <div class="space-y-8">
+                        <div>
+                            <h4 class="text-xs tracking-widest uppercase font-bold mb-3 border-b border-[#F7F3EE] pb-3">6A Mulberry Silk</h4>
+                            <p class="text-xs text-[#7A7A7A] leading-relaxed">Sourced from sustainable farms, our 19-22 momme silk provides the ultimate luxury feel and skin-friendly properties.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xs tracking-widest uppercase font-bold mb-3 border-b border-[#F7F3EE] pb-3">Recycled Polyamide</h4>
+                            <p class="text-xs text-[#7A7A7A] leading-relaxed">For our swimwear, we prioritize eco-fibers that provide superior UV protection and chlorine resistance.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-xs tracking-widest uppercase font-bold mb-3 border-b border-[#F7F3EE] pb-3">Chantilly & Leavers Lace</h4>
+                            <p class="text-xs text-[#7A7A7A] leading-relaxed">Intricate European-standard lace curated for luxury lingerie aesthetics and exceptional durability.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6 fade-in">
+                    <div class="aspect-square bg-cream"><img src="https://images.unsplash.com/photo-1610030469915-9a08fa996e4a?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover grayscale opacity-80"></div>
+                    <div class="aspect-square bg-cream"><img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&q=80" class="w-full h-full object-cover grayscale opacity-80"></div>
+                    <div class="aspect-square bg-cream col-span-2 aspect-[2/1]"><img src="https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80" class="w-full h-full object-cover grayscale opacity-80"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-cream text-[#1A1A1A] px-8 lg:px-24">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-2xl font-serif tracking-widest font-bold mb-6">DIERLOVE</div>
+                <p class="text-xs text-[#7A7A7A] leading-relaxed max-w-sm">
+                    Dierlove is a premier supply chain partner specializing in luxury lingerie and swimwear. We empower brands with design-led manufacturing and global logistics expertise.
+                </p>
+            </div>
+            <div>
+                <h5 class="text-[10px] tracking-[0.2em] uppercase font-bold mb-6">Explore</h5>
+                <ul class="text-xs space-y-4 text-[#7A7A7A] tracking-wider">
+                    <li><a href="index.html#hero" class="hover:text-gold">Home</a></li>
+                    <li><a href="index.html#categories" class="hover:text-gold">Collections</a></li>
+                    <li><a href="manufacturing.html" class="hover:text-gold">The Factory</a></li>
+                    <li><a href="index.html#services" class="hover:text-gold">Our Services</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-[10px] tracking-[0.2em] uppercase font-bold mb-6">Follow</h5>
+                <ul class="text-xs space-y-4 text-[#7A7A7A] tracking-wider">
+                    <li><a href="#" class="hover:text-gold">Instagram</a></li>
+                    <li><a href="#" class="hover:text-gold">LinkedIn</a></li>
+                    <li><a href="https://wa.me/8615160316059" class="hover:text-gold">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto mt-20 pt-8 border-t border-[#D8C7B5] flex flex-col md:flex-row justify-between items-center text-[10px] tracking-[0.2em] text-[#7A7A7A]">
+            <span>© 2026 DIERLOVE MANUFACTURING CO., LTD.</span>
+            <span class="mt-4 md:mt-0 text-center">
+                Email: bellayudearlove@gmail.com | Phone: +86 151 6031 6059
+            </span>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8615160316059" target="_blank" class="fixed bottom-10 right-10 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.067 2.877 1.215 3.076.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <!-- Quote Floating Button -->
+    <a href="index.html#contact" class="fixed bottom-10 left-10 bg-gold text-black px-8 py-4 rounded-full font-bold text-xs tracking-[0.2em] uppercase shadow-[0_0_30px_rgba(200,162,122,0.4)] hover:scale-110 transition-transform z-50 flex items-center gap-3">
+        Get a Free Quote <span class="text-lg">🏷️</span>
+    </a>
+
+    <script>
+        // Simple Intersection Observer for Fade-in effects
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
