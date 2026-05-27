@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Manufacturing & Private Label | Dierlove Factory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: #F7F3EE;
+            color: #1A1A1A;
+            scroll-behavior: smooth;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+        .bg-cream { background-color: #F7F3EE; }
+        .text-gold { color: #C8A27A; }
+        .bg-gold { background-color: #C8A27A; }
+        .border-gold { border-color: #C8A27A; }
+        
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+        
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .service-card {
+            background: white;
+            transition: all 0.5s ease;
+        }
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header / Navigation -->
+    <nav class="fixed top-0 w-full z-50 bg-white/80 backdrop-blur-md border-b border-[#F7F3EE] px-8 py-6 flex justify-between items-center">
+        <a href="index.html" class="text-2xl font-serif tracking-widest font-bold">DIERLOVE</a>
+        <div class="hidden md:flex space-x-12 text-xs tracking-[0.2em] uppercase font-medium">
+            <a href="index.html" class="hover:text-gold transition">Home</a>
+            <a href="customization.html" class="text-gold transition">Customization</a>
+            <a href="manufacturing.html" class="hover:text-gold transition">Manufacturing</a>
+            <a href="index.html#categories" class="hover:text-gold transition">Collections</a>
+            <a href="index.html#contact" class="hover:text-gold transition">Inquiry</a>
+        </div>
+        <div class="md:hidden">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </div>
+    </nav>
+
+    <!-- Customization Hero -->
+    <section class="relative pt-40 pb-32 bg-white overflow-hidden">
+        <div class="container mx-auto px-8 lg:px-24 text-center">
+            <div class="fade-in">
+                <span class="text-xs tracking-[0.4em] text-gold uppercase mb-6 block font-semibold">Your Vision, Tailored</span>
+                <h1 class="text-5xl lg:text-7xl font-serif leading-tight mb-8">
+                    Custom Manufacturing <br><span class="italic font-normal text-gold">Solutions.</span>
+                </h1>
+                <p class="max-w-3xl mx-auto text-[#7A7A7A] text-lg leading-relaxed font-light mb-12">
+                    Dierlove provides a comprehensive customization suite, from full-scale ODM development to specialized private label solutions. We translate your brand identity into exquisite garments.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Services: OEM & ODM -->
+    <section class="py-32 bg-cream">
+        <div class="container mx-auto px-8 lg:px-24">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-12">
+                <!-- OEM Service -->
+                <div class="service-card p-12 fade-in">
+                    <span class="text-[10px] tracking-[0.3em] text-gold uppercase font-bold mb-4 block">Manufacturing Pillar 01</span>
+                    <h2 class="text-3xl font-serif mb-6 uppercase tracking-widest">OEM Service</h2>
+                    <p class="text-sm text-[#7A7A7A] leading-relaxed mb-8">
+                        **You provide the design, we provide the expertise.** Perfect for established brands with their own technical sheets and mood boards. We handle precision pattern making, sourcing, and mass production.
+                    </p>
+                    <ul class="text-[10px] tracking-widest uppercase space-y-4 font-bold text-dark">
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Tech Pack Interpretation</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> 1:1 Precision Sampling</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Scalable Production Lines</li>
+                    </ul>
+                </div>
+                <!-- ODM Service -->
+                <div class="service-card p-12 fade-in" style="transition-delay: 200ms;">
+                    <span class="text-[10px] tracking-[0.3em] text-gold uppercase font-bold mb-4 block">Manufacturing Pillar 02</span>
+                    <h2 class="text-3xl font-serif mb-6 uppercase tracking-widest">ODM Service</h2>
+                    <p class="text-sm text-[#7A7A7A] leading-relaxed mb-8">
+                        **Full-scale development from concept.** Our in-house design team creates original styles based on your market research and brand direction. We provide the development so you can focus on growth.
+                    </p>
+                    <ul class="text-[10px] tracking-widest uppercase space-y-4 font-bold text-dark">
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Trend Analysis & Mood Boards</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Original Pattern Development</li>
+                        <li class="flex items-center gap-3"><span class="w-1.5 h-1.5 bg-gold rounded-full"></span> Market-Ready Collections</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Deep Customization Pillars -->
+    <section class="py-32 bg-white">
+        <div class="container mx-auto px-8 lg:px-24">
+            <div class="text-center mb-24 fade-in">
+                <h2 class="text-4xl font-serif mb-6 uppercase tracking-widest text-dark">The 360° Custom Suite</h2>
+                <div class="w-20 h-px bg-gold mx-auto opacity-50"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Private Label -->
+                <div class="border border-[#F7F3EE] p-10 fade-in">
+                    <div class="text-gold mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M7 7h.01M7 3h5c.512 0 1.024.195 1.414.586l7 7a2 2 0 010 2.828l-7 7a2 2 0 01-2.828 0l-7-7A1.994 1.994 0 013 12V7a4 4 0 014-4z"></path></svg>
+                    </div>
+                    <h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-4">Private Label</h3>
+                    <p class="text-[11px] text-[#7A7A7A] leading-relaxed">Fast-track solution for rising brands. Select from our best-selling house designs and apply your own branding and labels.</p>
+                </div>
+
+                <!-- Packaging -->
+                <div class="border border-[#F7F3EE] p-10 fade-in" style="transition-delay: 100ms;">
+                    <div class="text-gold mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"></path></svg>
+                    </div>
+                    <h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-4">Packaging</h3>
+                    <p class="text-[11px] text-[#7A7A7A] leading-relaxed">Full bespoke packaging: Luxury boxes, silk ribbons, custom swing tags, and branded eco-friendly garment bags.</p>
+                </div>
+
+                <!-- Fabrics -->
+                <div class="border border-[#F7F3EE] p-10 fade-in" style="transition-delay: 200ms;">
+                    <div class="text-gold mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M3 10h18M3 14h18m-9-4v8m-7 0h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v8a2 2 0 002 2z"></path></svg>
+                    </div>
+                    <h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-4">Fabric Spec</h3>
+                    <p class="text-[11px] text-[#7A7A7A] leading-relaxed">Sourcing of specialized French lace, mulberry silk, recycled ocean polyamide, and custom fabric prints/dyeing.</p>
+                </div>
+
+                <!-- Accessories -->
+                <div class="border border-[#F7F3EE] p-10 fade-in" style="transition-delay: 300ms;">
+                    <div class="text-gold mb-6">
+                        <svg class="w-10 h-10" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1" d="M12 8v13m0-13V6a2 2 0 112 2h-2zm0 0V5.5A2.5 2.5 0 109.5 8H12z"></path></svg>
+                    </div>
+                    <h3 class="text-sm font-bold uppercase tracking-[0.2em] mb-4">Accessories</h3>
+                    <p class="text-[11px] text-[#7A7A7A] leading-relaxed">Premium finishing: Metal buckles, engraved hardware, luxury zippers, and custom logo elastic bands.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-20 bg-cream text-[#1A1A1A] px-8 lg:px-24 border-t border-[#D8C7B5]">
+        <div class="container mx-auto grid grid-cols-1 md:grid-cols-4 gap-12">
+            <div class="col-span-1 md:col-span-2">
+                <div class="text-2xl font-serif tracking-widest font-bold mb-6">DIERLOVE</div>
+                <p class="text-xs text-[#7A7A7A] leading-relaxed max-w-sm">
+                    Dierlove is a premier supply chain partner specializing in luxury lingerie and swimwear. We empower brands with design-led manufacturing and global logistics expertise.
+                </p>
+            </div>
+            <div>
+                <h5 class="text-[10px] tracking-[0.2em] uppercase font-bold mb-6">Explore</h5>
+                <ul class="text-xs space-y-4 text-[#7A7A7A] tracking-wider">
+                    <li><a href="index.html" class="hover:text-gold">Home</a></li>
+                    <li><a href="customization.html" class="hover:text-gold">Customization</a></li>
+                    <li><a href="manufacturing.html" class="hover:text-gold">The Factory</a></li>
+                    <li><a href="index.html#categories" class="hover:text-gold">Collections</a></li>
+                </ul>
+            </div>
+            <div>
+                <h5 class="text-[10px] tracking-[0.2em] uppercase font-bold mb-6">Follow</h5>
+                <ul class="text-xs space-y-4 text-[#7A7A7A] tracking-wider">
+                    <li><a href="#" class="hover:text-gold">Instagram</a></li>
+                    <li><a href="#" class="hover:text-gold">LinkedIn</a></li>
+                    <li><a href="https://wa.me/8615160316059" class="hover:text-gold">WhatsApp</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto mt-20 pt-8 border-t border-[#D8C7B5] flex flex-col md:flex-row justify-between items-center text-[10px] tracking-[0.2em] text-[#7A7A7A]">
+            <span>© 2026 DIERLOVE MANUFACTURING CO., LTD.</span>
+            <span class="mt-4 md:mt-0 text-center">
+                Email: bellayudearlove@gmail.com | Phone: +86 151 6031 6059
+            </span>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/8615160316059" target="_blank" class="fixed bottom-10 right-10 w-16 h-16 bg-[#25D366] text-white rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-transform z-50">
+        <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.067 2.877 1.215 3.076.149.198 2.095 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    </a>
+
+    <script>
+        // Simple Intersection Observer for Fade-in effects
+        const observerOptions = { threshold: 0.1 };
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+        document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+    </script>
+</body>
+</html>
