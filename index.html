@@ -108,8 +108,44 @@
                 <div class="w-20 h-px bg-gold mx-auto opacity-50"></div>
             </div>
 
-            <!-- Lingerie Series -->
-            <div class="mb-12">
+            <!-- Category Overview Navigation -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-32">
+                <!-- Card 1: Lingerie -->
+                <a href="#lingerie-matrix" class="group relative aspect-[3/4] overflow-hidden cursor-pointer fade-in">
+                    <img src="https://sc01.alicdn.com/kf/A160b3694fac64593bb220dd59c618360C.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-all duration-500 flex flex-col justify-end p-8">
+                        <h3 class="text-white text-xl font-serif tracking-widest uppercase">Lingerie</h3>
+                        <p class="text-white/60 text-[9px] tracking-[0.2em] mt-2 uppercase opacity-0 group-hover:opacity-100 transition-opacity">Explore Collection</p>
+                    </div>
+                </a>
+                <!-- Card 2: Pajamas -->
+                <a href="#pajamas-matrix" class="group relative aspect-[3/4] overflow-hidden cursor-pointer fade-in">
+                    <img src="https://sc01.alicdn.com/kf/A16bcf5bc38c542c4aca93a7b7550038dC.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-all duration-500 flex flex-col justify-end p-8">
+                        <h3 class="text-white text-xl font-serif tracking-widest uppercase">Pajamas</h3>
+                        <p class="text-white/60 text-[9px] tracking-[0.2em] mt-2 uppercase opacity-0 group-hover:opacity-100 transition-opacity">Explore Collection</p>
+                    </div>
+                </a>
+                <!-- Card 3: Swimwear -->
+                <a href="#swimwear-matrix" class="group relative aspect-[3/4] overflow-hidden cursor-pointer fade-in">
+                    <img src="https://sc01.alicdn.com/kf/A9987a94b92a44ca7b85f9b22036843ff1.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-all duration-500 flex flex-col justify-end p-8">
+                        <h3 class="text-white text-xl font-serif tracking-widest uppercase">Swimwear</h3>
+                        <p class="text-white/60 text-[9px] tracking-[0.2em] mt-2 uppercase opacity-0 group-hover:opacity-100 transition-opacity">Explore Collection</p>
+                    </div>
+                </a>
+                <!-- Card 4: Tank Tops -->
+                <a href="#tank-matrix" class="group relative aspect-[3/4] overflow-hidden cursor-pointer fade-in">
+                    <img src="https://sc01.alicdn.com/kf/Ae928e0398dec4667835c61ab3c512d81V.jpg" class="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-110">
+                    <div class="absolute inset-0 bg-black/10 group-hover:bg-black/30 transition-all duration-500 flex flex-col justify-end p-8">
+                        <h3 class="text-white text-xl font-serif tracking-widest uppercase">Women Tank Top</h3>
+                        <p class="text-white/60 text-[9px] tracking-[0.2em] mt-2 uppercase opacity-0 group-hover:opacity-100 transition-opacity">Explore Collection</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Detailed Collections Matrix -->
+            <div id="lingerie-matrix" class="mb-12">
                 <div class="flex items-center gap-4 mb-8">
                     <h3 class="text-xl font-serif tracking-widest uppercase">Lingerie Series</h3>
                     <div class="flex-grow h-px bg-dark/5"></div>
@@ -132,7 +168,7 @@
             </div>
 
             <!-- Swimwear Series -->
-            <div class="mb-12">
+            <div id="swimwear-matrix" class="mb-12">
                 <div class="flex items-center gap-4 mb-8">
                     <h3 class="text-xl font-serif tracking-widest uppercase">Swimwear Series</h3>
                     <div class="flex-grow h-px bg-dark/5"></div>
@@ -155,7 +191,7 @@
             </div>
 
             <!-- Pajamas Series -->
-            <div class="mb-12">
+            <div id="pajamas-matrix" class="mb-12">
                 <div class="flex items-center gap-4 mb-8">
                     <h3 class="text-xl font-serif tracking-widest uppercase">Pajamas Series</h3>
                     <div class="flex-grow h-px bg-dark/5"></div>
@@ -178,7 +214,7 @@
             </div>
 
             <!-- Tank Tops Series -->
-            <div class="mb-12">
+            <div id="tank-matrix" class="mb-12">
                 <div class="flex items-center gap-4 mb-8">
                     <h3 class="text-xl font-serif tracking-widest uppercase">Swimwear Series</h3>
                     <div class="flex-grow h-px bg-dark/5"></div>
