@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dierlovefactory.com/sitemap.xml
