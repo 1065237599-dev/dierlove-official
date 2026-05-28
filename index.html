@@ -24,49 +24,75 @@
 
     <!-- Structured Data (JSON-LD) for SEO & GEO -->
     <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "ManufacturingBusiness",
-      "name": "Dierlove Factory",
-      "alternateName": "Dierlove Lingerie & Swimwear",
-      "description": "Premium OEM/ODM lingerie and swimwear manufacturer in China. Specialized in high-end technical production with low MOQ (50pcs) for branding and private label solutions.",
-      "url": "https://dierlovefactory.com",
-      "logo": "https://dierlovefactory.com/logo.png",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Quanzhou",
-        "addressRegion": "Fujian",
-        "addressCountry": "CN"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 24.8741,
-        "longitude": 118.6759
-      },
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "contactType": "Sales",
-        "availableLanguage": ["English", "Chinese"]
-      },
-      "sameAs": [
-        "https://dierlove.en.alibaba.com"
-      ],
-      "offers": {
-        "@type": "Offer",
-        "itemOffered": [
-          {
-            "@type": "Service",
-            "name": "OEM Lingerie Manufacturing",
-            "description": "Custom styles and technical patterns with 200pcs MOQ per style."
-          },
-          {
-            "@type": "Service",
-            "name": "Private Label Branding",
-            "description": "Custom labels, tags, and packaging with 50pcs MOQ."
-          }
+    [
+      {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Dierlove Factory",
+        "url": "https://dierlovefactory.com",
+        "logo": "https://dierlovefactory.com/logo.png",
+        "description": "Premium OEM/ODM lingerie and swimwear manufacturer in China.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Quanzhou",
+          "addressRegion": "Fujian",
+          "addressCountry": "CN"
+        },
+        "sameAs": [
+          "https://dierlove.en.alibaba.com"
         ]
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Dierlove Factory",
+        "image": "https://sc01.alicdn.com/kf/A26907c2a9e2b4977bc23f5afc89b905fc.png",
+        "url": "https://dierlovefactory.com",
+        "telephone": "+86-XXXXXXXXXXX",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Manufacturing District",
+          "addressLocality": "Quanzhou",
+          "addressRegion": "Fujian",
+          "addressCountry": "CN"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": 24.8741,
+          "longitude": 118.6759
+        },
+        "openingHoursSpecification": {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "18:00"
+        }
+      },
+      {
+        "@context": "https://schema.org",
+        "@type": "Product",
+        "name": "Custom Lingerie & Swimwear Manufacturing",
+        "image": "https://sc01.alicdn.com/kf/A26907c2a9e2b4977bc23f5afc89b905fc.png",
+        "description": "Premium OEM/ODM manufacturing services for global lingerie and swimwear brands.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Dierlove"
+        },
+        "offers": {
+          "@type": "AggregateOffer",
+          "offerCount": "2",
+          "lowPrice": "1.0",
+          "highPrice": "50.0",
+          "priceCurrency": "USD"
+        }
       }
-    }
+    ]
     </script>
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
